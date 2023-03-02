@@ -29,7 +29,7 @@ class FavoriteMoviesActivity : AppCompatActivity() {
 
     fun botones(peli:Movies){
         binding.volverDisplay.setOnClickListener {
-            val intent=Intent(this, MovieTitleActivity::class.java)
+            val intent=Intent(this, MovieDisplayActivity::class.java)
             intent.putExtra("PELI", peli)
             startActivity(intent)
         }
