@@ -35,7 +35,8 @@ class MovieDisplayActivity : AppCompatActivity() {
         binding.Favoritos.setOnClickListener {
             if (binding.checkBoxFav.isChecked){
                 peli.setFav(true)
-            }
+            }else
+                peli.setFav(false)
             val intent= Intent(this, FavoriteMoviesActivity::class.java)
             intent.putExtra("PELI", peli)
             startActivity(intent)
